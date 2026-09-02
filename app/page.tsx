@@ -29,14 +29,14 @@ export default function Home() {
       <nav className="nav" aria-label="Main navigation">
         <a href="#top" className="brand" aria-label="Cosmo home">
           <span className="brand-mark"><i /><i /><i /></span>
-          <span>COSMO</span>
+          <span>COSMOS</span>
         </a>
         <div className="nav-links">
           <a href="#capabilities">Capabilities</a>
           <a href="#approach">Approach</a>
           <a href="#contact">Contact</a>
         </div>
-        <a className="nav-cta" href="mailto:hello@cosmo.company">Start a conversation <Arrow /></a>
+        <a className="nav-cta" href="https://t.me/kuzminklk">Start a conversation <Arrow /></a>
         <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu">
           <span /><span />
         </button>
@@ -49,7 +49,7 @@ export default function Home() {
       </div>}
 
       <section id="top" className="hero grid-surface">
-        <div className="hero-kicker"><span className="live-dot" /> Independent technology company</div>
+        <div className="hero-kicker"><span className="live-dot" />Daniel Cosmo's company</div>
         <div className="hero-copy">
           <p className="eyebrow">Daniel Cosmo / Founder</p>
           <h1>Build the<br /><em>uncommon.</em></h1>
@@ -95,9 +95,9 @@ export default function Home() {
       <section id="contact" className="contact">
         <div className="contact-top reveal"><span>03</span><span>Available for selected projects</span></div>
         <h2 className="reveal">Let&apos;s make<br />something <em>matter.</em></h2>
-        <a className="contact-email reveal" href="mailto:hello@cosmo.company">hello@cosmo.company <Arrow /></a>
+        <a className="contact-email reveal" href="mailto:kuzminkdk@gmail.com">kuzminkdk@gmail.com <Arrow /></a>
         <footer>
-          <span>© {new Date().getFullYear()} Cosmo Company</span>
+          <span>© {new Date().getFullYear()} Cosmo's Company</span>
           <span>Designed for a future in motion.</span>
           <a href="#top">Back to top ↑</a>
         </footer>
