@@ -9,7 +9,7 @@ Cosmo's company website
 Development: Artificial intelligence driven, Visual Studio Code  
 Markup: HTML, CSS  
 Programming language: JavaScript  
-Formatting: “.editorconfig”, “.vscode/…”, Prettier  
+Formatting: “.editorconfig”, “.vscode/…”, Prettier
 
 ## State
 
