@@ -1,49 +1,32 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 const services = [
-	[
-		"01",
-		"Applied Intelligence",
-		"AI systems that turn complex information into a clear advantage.",
-	],
-	[
-		"02",
-		"Software Engineering",
-		"Fast, resilient products built around how people actually work.",
-	],
-	[
-		"03",
-		"Technical Strategy",
-		"A decisive path from ambitious idea to dependable infrastructure.",
-	],
-];
+	["01", "Applied Intelligence", "AI systems that turn complex information into a clear advantage."],
+	["02", "Software Engineering", "Fast, resilient products built around how people actually work."],
+	["03", "Technical Strategy", "A decisive path from ambitious idea to dependable infrastructure."],
+]
 
 function Arrow() {
 	return (
 		<span className="arrow" aria-hidden="true">
 			↗
 		</span>
-	);
+	)
 }
 
 export default function Home() {
-	const [menuOpen, setMenuOpen] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false)
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
-			(entries) =>
-				entries.forEach((entry) =>
-					entry.target.classList.toggle("is-visible", entry.isIntersecting),
-				),
+			(entries) => entries.forEach((entry) => entry.target.classList.toggle("is-visible", entry.isIntersecting)),
 			{ threshold: 0.12 },
-		);
-		document
-			.querySelectorAll(".reveal")
-			.forEach((element) => observer.observe(element));
-		return () => observer.disconnect();
-	}, []);
+		)
+		document.querySelectorAll(".reveal").forEach((element) => observer.observe(element))
+		return () => observer.disconnect()
+	}, [])
 
 	return (
 		<main>
@@ -103,15 +86,10 @@ export default function Home() {
 					</h1>
 					<div className="hero-bottom">
 						<p>
-							Cosmo turns ambitious questions into durable technology. We design
-							and engineer the intelligent systems behind the next era of
-							business.
+							Cosmo turns ambitious questions into durable technology. We design and engineer the intelligent systems
+							behind the next era of business.
 						</p>
-						<a
-							href="#capabilities"
-							className="round-link"
-							aria-label="Explore capabilities"
-						>
+						<a href="#capabilities" className="round-link" aria-label="Explore capabilities">
 							<Arrow />
 						</a>
 					</div>
@@ -134,10 +112,7 @@ export default function Home() {
 						Technology with
 						<br />a point of view.
 					</h2>
-					<p>
-						We pair the rigor of computer science with the curiosity needed to
-						find a better answer.
-					</p>
+					<p>We pair the rigor of computer science with the curiosity needed to find a better answer.</p>
 				</div>
 				<div className="service-list">
 					{services.map(([number, title, description]) => (
@@ -165,9 +140,8 @@ export default function Home() {
 						feel <em>inevitable.</em>
 					</h2>
 					<p className="manifesto-body">
-						The best systems are almost invisible: focused, powerful, and ready
-						for what comes next. We work closely, move deliberately, and leave
-						you with a capability—not a dependency.
+						The best systems are almost invisible: focused, powerful, and ready for what comes next. We work closely,
+						move deliberately, and leave you with a capability—not a dependency.
 					</p>
 				</div>
 				<div className="signal-card reveal">
@@ -203,5 +177,5 @@ export default function Home() {
 				</footer>
 			</section>
 		</main>
-	);
+	)
 }
